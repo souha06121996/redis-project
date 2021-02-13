@@ -70,7 +70,7 @@ function cache(req,res,next) {
     })
     
 }
-app.get('/repos/:username',cache,getRepos);
+app.get('/repos/:username',getRepos);
 
 app.listen(PORT,()=>{
     console.log(`App listening on port ${PORT}`);
